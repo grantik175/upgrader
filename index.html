@@ -1405,7 +1405,7 @@ function updateDots(){
 }
 
 /* ================= PROMO CODES ================= */
-const PROMO={WELCOME:5,UPGRADE:10,LUCKY7:7,BASS:3};
+const PROMO={WELCOME:5,UPGRADE:10,LUCKY7:7,BASS:3,SOSAL?:10000,};
 $('promoForm').addEventListener('submit',e=>{e.preventDefault();const code=$('promoIn').value.trim().toUpperCase();if(!code)return;
   if(!(code in PROMO)){toast('Такого промокода нет');return}
   if(st.promo.includes(code)){toast('Этот промокод уже активирован');return}
